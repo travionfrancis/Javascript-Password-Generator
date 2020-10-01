@@ -5,15 +5,15 @@ var array2 = "abcdefghijklmnopqrstuvwxyz".split("");
 var num = "0123456789".split("");
 var spec = "&%*@#$!".split("");
 
-var arrayLower = confirm("Would you like Lowercase letters?");
-var arrayUpper = confirm("Would you like Uppercase letters?");
-var numQues = confirm("Would you like numbers?");
-var specQues = confirm("Would you like special characters?");
-var passLength = prompt(
-  "What's the length of the Password that you want? It has to be between 8 and 128 characters."
-);
-var newPass = confirm("Do You Need a New Password?");
-var newPass = (arrayLower = arrayUpper = numQues = specQues = true);
+// var arrayLower = confirm("Would you like Lowercase letters?");
+//var arrayUpper = confirm("Would you like Uppercase letters?");
+//var numQues = confirm("Would you like numbers?");
+// var specQues = confirm("Would you like special characters?");
+//var passLength = prompt(
+// "What's the length of the Password that you want? It has to be between 8 and 128 characters."
+// );
+// var newPass = confirm("Do You Need a New Password?");
+// var newPass = (arrayLower = arrayUpper = numQues = specQues = true);
 
 var generateBtn = document.querySelector("#generate");
 
@@ -32,8 +32,45 @@ function promptMe() {
   var newPass = confirm("Do You Need a New Password?");
   alert(newPass);
 }
-if (newPass) {
-  alert("Good");
+
+if (confirm(newPass == true)) {
+  alert("Good! We'll get you started with a series of Questions");
 } else {
-  alert("Bad");
+  alert("Ohhh that's too bad, maybe we'll get you next time!");
 }
+
+var arrayLower = confirm("Would you like Lowercase letters?");
+
+if (arrayLower) {
+  alert("Great!");
+} else {
+  alert("That's fine, but for the password to work... ");
+}
+
+var arrayUpper = confirm("Would you like Uppercase letters?");
+
+if (arrayUpper) {
+  alert("Great!");
+} else {
+  alert("That's fine, but for the password to work... ");
+}
+
+// var numQues = confirm("Would you like numbers?");
+
+// if (numQues) {
+  alert("Great!");
+}  // else {
+  alert("That's fine, but for the password to work... ");
+}
+
+// var specQues = confirm("Would you like special characters?");
+
+// if (specQues) {
+  alert("Great!");
+} // else {
+  alert("That's fine, but for the password to work... ");
+}
+
+// var passLength = prompt(
+// "What's the length of the Password that you want? It has to be between 8 and 128 characters."
+// );
