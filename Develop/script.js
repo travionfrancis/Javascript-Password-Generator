@@ -31,26 +31,34 @@ generateBtn.addEventListener("click", writePassword);
 function promptMe() {
   var newPass = confirm("Do You Need a New Password?");
   alert(newPass);
-}
 
-if (confirm(newPass == true)) {
-  alert("Good! We'll get you started with a series of Questions");
-} else {
-  alert("Ohhh that's too bad, maybe we'll get you next time!");
-}
+  if (newPass) {
+    alert("Good! We'll get you started with a series of Questions");
+  } else {
+    alert("Ohhh that's too bad, maybe we'll get you next time!");
+  }
 
-var arrayLower = confirm("Would you like Lowercase letters?");
+  var arrayLower = confirm("Would you like Lowercase letters?");
 
-if (arrayLower) {
-  alert("Great!");
-} else {
-  alert("That's fine, but for the password to work... ");
-}
+  if (arrayLower) {
+    alert("Great!");
+  } else {
+    alert("That's fine.");
+  }
 
-var arrayUpper = confirm("Would you like Uppercase letters?");
+  var arrayUpper = confirm("Would you like Uppercase letters?");
 
-if (arrayUpper) {
-  alert("Great!");
-} else {
-  alert("That's fine, but for the password to work... ");
+  if (arrayUpper) {
+    alert("Great!");
+  } else {
+    alert("That's alright. ");
+  }
+
+  var numQues = confirm("Would you also like numbers?");
+
+  if (numQues) {
+    alert("Great!");
+  } else {
+    alert("That's okay, too. ");
+  }
 }
