@@ -54,23 +54,3 @@ if (arrayUpper) {
 } else {
   alert("That's fine, but for the password to work... ");
 }
-
-// var numQues = confirm("Would you like numbers?");
-
-// if (numQues) {
-  alert("Great!");
-}  // else {
-  alert("That's fine, but for the password to work... ");
-}
-
-// var specQues = confirm("Would you like special characters?");
-
-// if (specQues) {
-  alert("Great!");
-} // else {
-  alert("That's fine, but for the password to work... ");
-}
-
-// var passLength = prompt(
-// "What's the length of the Password that you want? It has to be between 8 and 128 characters."
-// );
