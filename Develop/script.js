@@ -41,7 +41,7 @@ function promptMe() {
   var arrayLower = confirm("Would you like Lowercase letters?");
 
   if (arrayLower) {
-    alert("Great!");
+    alert("Marvelous!");
   } else {
     alert("That's fine.");
   }
@@ -49,7 +49,7 @@ function promptMe() {
   var arrayUpper = confirm("Would you like Uppercase letters?");
 
   if (arrayUpper) {
-    alert("Great!");
+    alert("Wonderful!");
   } else {
     alert("That's alright. ");
   }
@@ -57,8 +57,16 @@ function promptMe() {
   var numQues = confirm("Would you also like numbers?");
 
   if (numQues) {
-    alert("Great!");
+    alert("Fantastic!");
   } else {
     alert("That's okay, too. ");
+  }
+
+  var specQues = confirm("Would you like special characters?");
+
+  if (specQues) {
+    alert("Exceptional! Let's Generate your new Password!");
+  } else {
+    alert("That's fine");
   }
 }
