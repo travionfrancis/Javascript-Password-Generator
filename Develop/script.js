@@ -30,7 +30,7 @@ generateBtn.addEventListener("click", writePassword);
 
 function promptMe() {
   var newPass = confirm("Do You Need a New Password?");
-  alert(newPass);
+  // alert(newPass);
 
   if (newPass) {
     alert("Good! We'll get you started with a series of Questions");
@@ -73,4 +73,8 @@ function promptMe() {
   var passLength = prompt(
     "Between 8 and 128 characters, How long should the Password to be?"
   );
+
+  // write a function or something that selects between 8 to 128 characters
+  // take in account of someone answering no to any of the questions, so add more things to the "else" tags
+  //
 }
