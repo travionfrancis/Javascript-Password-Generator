@@ -69,4 +69,8 @@ function promptMe() {
   } else {
     alert("That's fine");
   }
+
+  var passLength = prompt(
+    "Between 8 and 128 characters, How long should the Password to be?"
+  );
 }
