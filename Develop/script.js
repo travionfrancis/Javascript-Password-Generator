@@ -59,13 +59,13 @@ function promptMe() {
   if (numQues) {
     alert("Fantastic!");
   } else {
-    alert("That's okay, too. ");
+    alert("That's okay, too.");
   }
 
   var specQues = confirm("Would you like special characters?");
 
   if (specQues) {
-    alert("Exceptional! Let's Generate your new Password!");
+    alert("Exceptional!");
   } else {
     alert("That's fine");
   }
