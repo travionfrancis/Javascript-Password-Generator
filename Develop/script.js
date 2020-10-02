@@ -76,5 +76,8 @@ function promptMe() {
 
   // write a function or something that selects between 8 to 128 characters
   // take in account of someone answering no to any of the questions, so add more things to the "else" tags
-  //
+
+  // This Homework is obviously incompleted but read this:
+  // I asked for a tutor, as my understanding of Javascript hasn't progressed as much as some of the other people in the class
+  // so I will be redoing this for a regrade as my lack of knowledge on the subject isn't helping me at this moment and hopefully it'll better as time progresses.
 }
