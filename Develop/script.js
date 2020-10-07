@@ -15,6 +15,16 @@ var spec = "&%*@#$!".split("");
 // var newPass = confirm("Do You Need a New Password?");
 // var newPass = (arrayLower = arrayUpper = numQues = specQues = true);
 
+function generatePassword() {
+  var randomPassword;
+
+  var confirms = promptMe();
+
+  console.log(confirms);
+
+  return randomPassword;
+}
+
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
@@ -29,55 +39,37 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function promptMe() {
-  var newPass = confirm("Do You Need a New Password?");
   // alert(newPass);
 
-  if (newPass) {
-    alert("Good! We'll get you started with a series of Questions");
-  } else {
-    alert("Ohhh that's too bad, maybe we'll get you next time!");
-  }
-
-  var arrayLower = confirm("Would you like Lowercase letters?");
-
-  if (arrayLower) {
-    alert("Marvelous!");
-  } else {
-    alert("That's fine.");
-  }
-
-  var arrayUpper = confirm("Would you like Uppercase letters?");
-
-  if (arrayUpper) {
-    alert("Wonderful!");
-  } else {
-    alert("That's alright. ");
-  }
-
-  var numQues = confirm("Would you also like numbers?");
-
-  if (numQues) {
-    alert("Fantastic!");
-  } else {
-    alert("That's okay, too.");
-  }
-
-  var specQues = confirm("Would you like special characters?");
-
-  if (specQues) {
-    alert("Exceptional!");
-  } else {
-    alert("That's fine");
-  }
-
+  // write a function or something that selects between 8 to 128 characters
   var passLength = prompt(
     "Between 8 and 128 characters, How long should the Password to be?"
   );
 
-  // write a function or something that selects between 8 to 128 characters
-  // take in account of someone answering no to any of the questions, so add more things to the "else" tags
+  if (passLength >= 8 && passLength <= 128) {
+    var arrayLower = confirm("Would you like Lowercase letters?");
+    var arrayUpper = confirm("Would you like Uppercase letters?");
+    var numQues = confirm("Would you also like numbers?");
+    var specQues = confirm("Would you like special characters?");
+  } else {
+    return alert("Invalid Length");
+  }
 
-  // This Homework is obviously incompleted but read this:
-  // I asked for a tutor, as my understanding of Javascript hasn't progressed as much as some of the other people in the class
-  // so I will be redoing this for a regrade as my lack of knowledge on the subject isn't helping me at this moment and hopefully it'll better as time progresses.
+  const values = [
+    "passLength",
+    "arrayLower",
+    "arrayUpper",
+    "numQues",
+    "specQues",
+  ];
+
+  // convert array to th object
+  const whichOne = Object.assign({}, values);
+
+  // print object
+  console.log(whichOne);
+
+  return [whichOne];
+
+  // take in account of someone answering no to any of the questions, so add more things to the "else" tags
 }
