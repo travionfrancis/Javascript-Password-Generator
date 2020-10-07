@@ -55,6 +55,13 @@ function promptMe() {
     return alert("Invalid Length");
   }
 
+  // This works
+  if (arrayLower === true) {
+    console.log("Add in Lowercase Letters");
+  } else {
+    console.log("Do not add in Lowercase Letters");
+  }
+
   const values = [
     "passLength",
     "arrayLower",
@@ -63,13 +70,8 @@ function promptMe() {
     "specQues",
   ];
 
-  // convert array to th object
   const whichOne = Object.assign({}, values);
-
-  // print object
   console.log(whichOne);
 
   return [whichOne];
-
-  // take in account of someone answering no to any of the questions, so add more things to the "else" tags
 }
