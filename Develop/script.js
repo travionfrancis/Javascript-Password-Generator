@@ -28,6 +28,16 @@ function generatePassword() {
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
+
+function generatePassword() {
+  var randomPassword;
+
+  var prompts = promptMe();
+  console.log(prompts);
+
+  return randomPassword;
+}
+
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -47,31 +57,22 @@ function promptMe() {
   );
 
   if (passLength >= 8 && passLength <= 128) {
-    var arrayLower = confirm("Would you like Lowercase letters?");
-    var arrayUpper = confirm("Would you like Uppercase letters?");
-    var numQues = confirm("Would you also like numbers?");
-    var specQues = confirm("Would you like special characters?");
+    var hasLower = confirm("Would you like Lowercase letters?");
+    var hasUpper = confirm("Would you like Uppercase letters?");
+    var hasNum = confirm("Would you also like numbers?");
+    var hasSpec = confirm("Would you like special characters?");
   } else {
     return alert("Invalid Length");
   }
 
-  // This works
-  if (arrayLower === true) {
-    console.log("Add in Lowercase Letters");
-  } else {
-    console.log("Do not add in Lowercase Letters");
-  }
+  var values = {
+    passLength: passLength,
+    hasLower: hasLower,
+    hasUpper: hasUpper,
+    hasNum: hasNum,
+    hasSpec: hasSpec,
+    name: "test",
+  };
 
-  const values = [
-    "passLength",
-    "arrayLower",
-    "arrayUpper",
-    "numQues",
-    "specQues",
-  ];
-
-  const whichOne = Object.assign({}, values);
-  console.log(whichOne);
-
-  return [whichOne];
+  return values;
 }
